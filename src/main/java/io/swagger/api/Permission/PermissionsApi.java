@@ -16,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2016-07-31T15:59:49.250Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2016-08-09T15:17:30.459Z")
 
 @Api(value = "permissions", description = "the permissions API")
 public interface PermissionsApi {
@@ -37,6 +37,10 @@ public interface PermissionsApi {
     @RequestMapping(value = "/permissions/{permissionId}",
         produces = { "application/json", "text/xml" }, 
         method = RequestMethod.GET)
-    ResponseEntity<Permission> permissionsPermissionIdGet(@ApiParam(value = "",required=true ) @PathVariable("permissionId") String permissionId);
+    ResponseEntity<Permission> permissionsPermissionIdGet(
+@ApiParam(value = "",required=true ) @PathVariable("permissionId") String permissionId
+
+
+);
 
 }
